@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp500"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_f8_r16"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp35"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dialog_jh_tip_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/dialog_jh_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp36" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_jh_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:fontFamily="@font/normal"
+        android:gravity="center"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/dp30" />
+
+    <com.srwing.enterwechat.ClearEditText
+        android:id="@+id/dialog_editext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:background="@null"
+        android:drawableRight="@drawable/editext_delete"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:minWidth="240dp"
+        android:paddingLeft="4dp"
+        android:textColor="#333"
+        android:textColorHint="#999"
+        android:textCursorDrawable="@drawable/password_cur_shape"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:hint="请输入手机号" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:visibility="gone"
+        android:background="#c8c7cc" />
+
+    <com.srwing.enterwechat.ClearEditText
+        android:id="@+id/dialog_editext_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:background="@null"
+        android:drawableRight="@drawable/editext_delete"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:minWidth="240dp"
+        android:paddingLeft="4dp"
+        android:textColor="#333"
+        android:textColorHint="#999"
+        android:textCursorDrawable="@drawable/password_cur_shape"
+        android:textSize="13sp"
+        android:visibility="gone"
+        tools:hint="请输入手机号" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:background="#c8c7cc" />
+
+    <LinearLayout
+        android:id="@+id/dialog_jh_operate_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp48"
+        android:layout_marginBottom="@dimen/dp38"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_jh_cancel_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp77"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gray_a7_stroke_r38"
+            android:fontFamily="@font/normal"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp30" />
+
+        <Space
+            android:layout_width="@dimen/dp30"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/dialog_jh_sure_tv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp77"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_weight="1"
+            android:background="@drawable/bg_yellow_solid_r38_latest"
+            android:fontFamily="@font/normal"
+            android:gravity="center"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/dp30" />
+    </LinearLayout>
+</LinearLayout>

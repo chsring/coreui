@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/icon_group"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp5">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_group"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textColor="@color/color_222222"
+        android:textSize="10sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/free_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_toRightOf="@id/icon_group"
+        android:background="@drawable/bg_ff4200_solid_r8"
+        android:paddingLeft="@dimen/dp6"
+        android:paddingTop="@dimen/dp2"
+        android:paddingRight="@dimen/dp6"
+        android:paddingBottom="@dimen/dp2"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/dp17"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/red_point_tip"
+        android:layout_width="@dimen/dp15"
+        android:layout_height="@dimen/dp15"
+        android:layout_marginLeft="-5dp"
+        android:layout_toRightOf="@id/icon_group"
+        android:background="@drawable/kf_bg_unread"
+        android:visibility="gone" />
+
+</merge>

@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_FFFFFF"
+        app:tl_indicator_color="#2d77c6"
+        app:tl_indicator_height="2dp"
+        app:tl_indicator_width="60dp"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="@color/color_9c9c9c"
+        app:tl_textUnselectColor="@color/color_9c9c9c"
+        app:tl_textsize="14sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@id/tab"
+        android:background="@color/color_FFFFFF" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_view"
+        android:layout_below="@id/view"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_apply" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="在校学生进出校门申请"
+                    android:textColor="#404040"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- 申请时间 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="申请时间"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_apply_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="2021-12-21"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- 申请时间 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="姓名"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="张睿"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="学号"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xuehao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="21302012"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="所在学院"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xueyuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="信息工程学院"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="年级"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_nianji"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="2021"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="专业"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_zhuanye"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="电子信息"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="学历层次"
+                    android:textColor="#999" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xueli"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="硕士研究生"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="性别"
+                    android:textColor="#999" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_xingbie"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="男"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="民族"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_minzu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="汉族"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="联系电话"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_dianhua"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="18811996561"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="身份证号"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_id_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="370000199209110015"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="辅导员姓名"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_fudaoyuan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="姜珊"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#f4f9fd"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:text="所在校区"
+                android:textColor="#999"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#fff"
+                android:gravity="center"
+                android:text="丰台校区"
+                android:textColor="#6f6f6f"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="是否已填请假\n申请"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/main_radiobutton_icon"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/act_tab_home_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="是"
+                        android:textColor="#6f6f6f"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        style="@style/main_radiobutton_icon"
+                        android:layout_marginLeft="12dp"
+                        android:checked="true"
+                        android:drawableLeft="@drawable/act_tab_home_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="否"
+                        android:textColor="#6f6f6f"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="拟出校日期"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_out_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2021-12-22"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="拟出校时间"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_out_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:text="00:00"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="拟返校日期"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_in_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2021-12-22"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="拟返校时间"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_in_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:text="23:59"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="出校天数"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_tianshu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="海淀校区拟出\n校门"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <RadioButton
+                        style="@style/main_radiobutton_icon"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/act_tab_home_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="东门"
+                        android:textColor="#6f6f6f"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        style="@style/main_radiobutton_icon"
+                        android:layout_marginLeft="12dp"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/act_tab_home_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="西门"
+                        android:textColor="#6f6f6f"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        style="@style/main_radiobutton_icon"
+                        android:layout_marginLeft="12dp"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/act_tab_home_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="小东门"
+                        android:textColor="#6f6f6f"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="海淀校区拟入\n校门"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp">
+
+                    <RadioButton
+                        style="@style/main_radiobutton_icon"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/act_tab_home_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="东门"
+                        android:textColor="#6f6f6f"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        style="@style/main_radiobutton_icon"
+                        android:layout_marginLeft="12dp"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/act_tab_home_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="西门"
+                        android:textColor="#6f6f6f"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        style="@style/main_radiobutton_icon"
+                        android:layout_marginLeft="12dp"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/act_tab_home_icon"
+                        android:drawablePadding="3dp"
+                        android:gravity="center_vertical"
+                        android:text="小东门"
+                        android:textColor="#6f6f6f"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="丰台校区拟出\n校门"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    style="@style/main_radiobutton_icon"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/act_tab_home_icon"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:text="南门"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="丰台校区拟入\n校门"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    style="@style/main_radiobutton_icon"
+                    android:layout_marginLeft="16dp"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/act_tab_home_icon"
+                    android:drawablePadding="3dp"
+                    android:gravity="center_vertical"
+                    android:text="南门"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="事由"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            style="@style/main_radiobutton_icon"
+                            android:checked="false"
+                            android:drawableLeft="@drawable/act_tab_home_icon"
+                            android:drawablePadding="3dp"
+                            android:gravity="center_vertical"
+                            android:text="看病就医"
+                            android:textColor="#6f6f6f"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            style="@style/main_radiobutton_icon"
+                            android:layout_marginLeft="12dp"
+                            android:checked="false"
+                            android:drawableLeft="@drawable/act_tab_home_icon"
+                            android:drawablePadding="3dp"
+                            android:gravity="center_vertical"
+                            android:text="实习实践"
+                            android:textColor="#6f6f6f"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            style="@style/main_radiobutton_icon"
+                            android:layout_marginLeft="12dp"
+                            android:checked="false"
+                            android:drawableLeft="@drawable/act_tab_home_icon"
+                            android:drawablePadding="3dp"
+                            android:gravity="center_vertical"
+                            android:text="取快递"
+                            android:textColor="#6f6f6f"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="外卖"
+                            android:textColor="#6f6f6f"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            style="@style/main_radiobutton_icon"
+                            android:layout_marginLeft="12dp"
+                            android:checked="false"
+                            android:drawableLeft="@drawable/act_tab_home_icon"
+                            android:drawablePadding="3dp"
+                            android:gravity="center_vertical"
+                            android:text="探亲访友"
+                            android:textColor="#6f6f6f"
+                            android:textSize="13sp" />
+
+                        <RadioButton
+                            style="@style/main_radiobutton_icon"
+                            android:layout_marginLeft="12dp"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/act_tab_home_icon"
+                            android:drawablePadding="3dp"
+                            android:gravity="center_vertical"
+                            android:text="其他原因"
+                            android:textColor="#6f6f6f"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#f4f9fd"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:text="其他原因"
+                android:textColor="#999"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_other_reason"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:text="感冒"
+                android:textColor="#6f6f6f"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="#f4f9fd"
+                android:gravity="center_vertical"
+                android:paddingLeft="14dp"
+                android:text="进出校通行证"
+                android:textColor="#999"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/iv_tongxingzheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:minHeight="44dp"
+                android:paddingLeft="14dp"
+                android:text="通行证链接"
+                android:textColor="#474747"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="辅导员意见"
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:text="审批通过"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="审核人        "
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shenpiren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:text="姜珊"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="审核日期    "
+                    android:textColor="#999"
+                    android:textSize="14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_shenhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical"
+                    android:text="2032-12-16"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_FFFFFF"
+        android:padding="7dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_62_r12"
+            android:gravity="center"
+            android:text="预览表单"
+            android:textColor="@color/color_6287c7"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>
