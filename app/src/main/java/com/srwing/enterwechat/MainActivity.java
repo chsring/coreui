@@ -177,9 +177,9 @@ public class MainActivity extends ToolBarBaseActivity {
 
         tvShenHe.setText(StringUtils.getNotNullString(data.applicationTime));
 
-        Date d = new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        data.outTime = sdf.format(d);
+//        Date d = new Date();
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//        data.outTime = sdf.format(d);
 
         ivTongxingzheng.setOnClickListener(new View.OnClickListener() {
             @Override
